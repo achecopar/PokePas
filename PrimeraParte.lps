@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="9">
+      <Unit0>
+        <Filename Value="PrimeraParte.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos Y="11"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="basededatos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="BaseDeDatos"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="75"/>
+        <CursorPos X="20" Y="93"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="dt_especie.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DT_Especie"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="109"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="dt_tipoelemental.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="23"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="testing.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Testing"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="35" Y="7"/>
+        <FoldState Value=" T1Ia!1 T3md4%~"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="utilidades.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Utilidades"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="62"/>
+        <CursorPos X="23" Y="82"/>
+        <FoldState Value=" TKB422 TCMR3e"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="dt_pokedex.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DT_Pokedex"/>
+        <EditorIndex Value="5"/>
+        <CursorPos X="36"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="gui_pokedex.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="PokePas.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="133"/>
+        <CursorPos X="32" Y="143"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit8>
+    </Units>
+    <JumpHistory Count="9" HistoryIndex="8">
+      <Position1>
+        <Filename Value="PrimeraParte.lpr"/>
+        <Caret Line="9" Column="26"/>
+      </Position1>
+      <Position2>
+        <Filename Value="utilidades.pas"/>
+        <Caret Line="96" Column="61" TopLine="70"/>
+      </Position2>
+      <Position3>
+        <Filename Value="utilidades.pas"/>
+        <Caret Line="91" Column="27" TopLine="79"/>
+      </Position3>
+      <Position4>
+        <Filename Value="utilidades.pas"/>
+        <Caret Line="90" Column="26" TopLine="72"/>
+      </Position4>
+      <Position5>
+        <Filename Value="PrimeraParte.lpr"/>
+        <Caret Line="11" Column="42"/>
+      </Position5>
+      <Position6>
+        <Filename Value="PrimeraParte.lpr"/>
+        <Caret Line="10"/>
+      </Position6>
+      <Position7>
+        <Filename Value="testing.pas"/>
+        <Caret Line="388" Column="42" TopLine="371"/>
+      </Position7>
+      <Position8>
+        <Filename Value="utilidades.pas"/>
+        <Caret Line="73" Column="16" TopLine="65"/>
+      </Position8>
+      <Position9>
+        <Filename Value="utilidades.pas"/>
+        <Caret Line="83" Column="58" TopLine="66"/>
+      </Position9>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

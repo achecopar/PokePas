@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="8">
+      <Unit0>
+        <Filename Value="PokePas.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="basededatos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="BaseDeDatos"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="dt_tipoelemental.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DT_TipoElemental"/>
+        <UsageCount Value="20"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="dt_especie.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DT_Especie"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="94"/>
+        <CursorPos X="11" Y="114"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="utilidades.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Utilidades"/>
+        <UsageCount Value="20"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="dt_pokedex.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DT_Pokedex"/>
+        <UsageCount Value="20"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="gui_pokedex.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="GUI_Pokedex"/>
+        <UsageCount Value="20"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="controladorpokedex.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ControladorPokedex"/>
+        <UsageCount Value="20"/>
+      </Unit7>
+    </Units>
+    <JumpHistory HistoryIndex="-1"/>
+  </ProjectSession>
+</CONFIG>
