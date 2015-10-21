@@ -89,32 +89,53 @@ IMPLEMENTATION
     PS_Esfuerzo, ATK_Esfuerzo, DEF_Esfuerzo, ATKSp_Esfuerzo, DEFSp_Esfuerzo,
     VEL_Esfuerzo: INTEGER; Crecimiento: STRING; RatioCaptura: INTEGER; VAR e: Especie);
   Begin
-
+    e.id := id;
+    e.numero := numero;
+    e.nombre := nombre;
+    e.tipo1 := tipo1;
+    e.tipo2 := tipo2;
+    e.PS_Base := PS_Base;
+    e.ATK_Base := ATK_Base;
+    e.DEF_Base := DEF_Base;
+    e.ATKSp_Base := ATKSp_Base;
+    e.DEFSp_Base := DEFSp_Base;
+    e.VEL_Base := VEL_Base;
+    e.AMISTAD_Base := AMISTAD_Base;
+    e.EXP_Base := EXP_Base;
+    e.PS_Esfuerzo := PS_Esfuerzo;
+    e.ATK_Esfuerzo := ATK_Esfuerzo;
+    e.DEF_Esfuerzo := DEF_Esfuerzo;
+    e.ATKSp_Esfuerzo := ATKSp_Esfuerzo;
+    e.DEFSp_Esfuerzo := DEFSp_Esfuerzo;
+    e.VEL_Esfuerzo := VEL_Esfuerzo;
+    e.Crecimiento := Crecimiento;
+    e.RatioCaptura := RatioCaptura;
   end;
 
   (*Retorna el Id de la especie dada.*)
   FUNCTION IdEspecie(e: Especie): INTEGER;
   Begin
-
+    IdEspecie := e.id;
   end;
 
   (*Retorna el número de la especie dada.*)
   FUNCTION NumeroEspecie(e: Especie): STRING;
   Begin
-
+    NumeroEspecie := e.numero;
   end;
 
   (*Retorna el nombre de la especie dada.*)
   FUNCTION NombreEspecie(e: Especie): STRING;
   Begin
-
+    NombreEspecie := e.nombre;
   end;
 
   (*Si t es 1 retorna el Tipo Primario de la especie, si t es 2 retorna el Tipo
   Secundario de la especie.*)
   FUNCTION TipoEspecie(t: RangoTiposElementales; e: Especie): INTEGER;
   Begin
-
+    if t = 1 then TipoEspecie := e.tipo1
+    else TipoEspecie := e.tipo2;
   end;
 
   (*Retorna una de las estadísticas de la especie 'e' según el valor pasado en el
@@ -124,14 +145,30 @@ IMPLEMENTATION
   ATKSp_Esfuerzo, DEFSp_Esfuerzo, VEL_Esfuerzo, RatioCaptura.*)
   FUNCTION EstadisticaEspecie(estadistica: RangoEstadisticasEspecie; e: Especie): INTEGER;
   Begin
-
+    case estadistica of
+         PS_Base: EstadisticaEspecie := e.PS_Base;
+         ATK_Base: EstadisticaEspecie := e.ATK_Base;
+         DEF_Base: EstadisticaEspecie := e.DEF_Base;
+         ATKSp_Base: EstadisticaEspecie := e.ATKSp_Base;
+         DEFSp_Base: EstadisticaEspecie := e.DEFSp_Base;
+         VEL_Base: EstadisticaEspecie := e.VEL_Base;
+         AMISTAD_Base: EstadisticaEspecie := e.AMISTAD_Base;
+         EXP_Base: EstadisticaEspecie := e.EXP_Base;
+         PS_Esfuerzo: EstadisticaEspecie := e.PS_Esfuerzo;
+         ATK_Esfuerzo: EstadisticaEspecie := e.ATK_Esfuerzo;
+         DEF_Esfuerzo: EstadisticaEspecie := e.DEF_Esfuerzo;
+         ATKSp_Esfuerzo: EstadisticaEspecie := e.ATKSp_Esfuerzo;
+         DEFSp_Esfuerzo: EstadisticaEspecie := e.DEFSp_Esfuerzo;
+         VEL_Esfuerzo: EstadisticaEspecie := e.VEL_Esfuerzo;
+         RatioCaptura: EstadisticaEspecie := e.RatioCaptura;
+    end;
   end;
 
-  (*Devuelve el tipo de creicmiento de la especie pudiendo ser 'RAPIDO', 'NORMAL',
+  (*Devuelve el tipo de crecimiento de la especie pudiendo ser 'RAPIDO', 'NORMAL',
   'LENTO', 'ERRÁTICO', 'FLUCTUANTE' o 'PARABOLICO'.*)
   FUNCTION CrecimientoEspecie(e: Especie): STRING;
   Begin
-
+    CrecimientoEspecie := e.Crecimiento;
   end;
 
 end.

@@ -63,68 +63,80 @@ IMPLEMENTATION
     * Operaciones para manejar el listado de especies pokémon.*
     ***********************************************************)
     (*Inicia la lista como vacía*)
-    PROCEDURE IniciarListaEspecies(VAR l: ListaEspecies); Begin
-              l.tope := 0;
+    PROCEDURE IniciarListaEspecies(VAR l: ListaEspecies);
+    Begin
+      l.tope := 0;
     end;
 
     (*Agrega una especie al final de la lista.*)
-    PROCEDURE AgregarEspecieListaEspecies(e: Especie; VAR l: ListaEspecies); Begin
-              l.lista[l.tope] := e;
-              l.tope := l.tope + 1;
+    PROCEDURE AgregarEspecieListaEspecies(e: Especie; VAR l: ListaEspecies);
+    Begin
+      l.tope := l.tope + 1;
+      l.lista[l.tope] := e;
     end;
 
     (*Indica si la lista es vacía.*)
-    FUNCTION EsVaciaListaEspecies(l: ListaEspecies): BOOLEAN; Begin
-              EsVaciaListaEspecies := l.tope=0;
+    FUNCTION EsVaciaListaEspecies(l: ListaEspecies): BOOLEAN;
+    Begin
+      EsVaciaListaEspecies := l.tope = 0;
     end;
 
     (*Retorna la especie del inicio de la lista. La lista no debe esar vacía.*)
-    FUNCTION PrimeraEspecieListaEspecies(l: ListaEspecies): Especie; Begin
-             PrimeraEspecieListaEspecies := l.lista[1];
+    FUNCTION PrimeraEspecieListaEspecies(l: ListaEspecies): Especie;
+    Begin
+      PrimeraEspecieListaEspecies := l.lista[1];
     end;
 
     (*Indica si el índice pasado como argumento es válido.*)
-    FUNCTION EsIndiceValidoListaEspecies(i: INTEGER; l: ListaEspecies): BOOLEAN; Begin
-             EsIndiceValidoListaEspecies := i < l.tope;
+    FUNCTION EsIndiceValidoListaEspecies(i: INTEGER; l: ListaEspecies): BOOLEAN;
+    Begin
+      EsIndiceValidoListaEspecies := l.tope >= i;
     end;
 
     (*Retorna la especie del índice indicado. El índice debe ser válido.*)
-    FUNCTION EspecieListaEspecies(indice: INTEGER; l: ListaEspecies): Especie; BEGIN
-             if(indice<l.tope) then
-                          EspecieListaEspecies := l.lista[indice];
+    FUNCTION EspecieListaEspecies(indice: INTEGER; l: ListaEspecies): Especie;
+    BEGIN
+      EspecieListaEspecies := l.lista[indice];
     end;
 
     (**********************************************************
     * Operaciones para manejar el listado de tipos elementales*
     ***********************************************************)
     (*Inicia la lista como vacía*)
-    PROCEDURE IniciarListaTiposElementales(VAR l: ListaTiposElementales); Begin
-
+    PROCEDURE IniciarListaTiposElementales(VAR l: ListaTiposElementales);
+    Begin
+      l.tope := 0;
     end;
 
     (*Agrega un tipo al final de la lista.*)
-    PROCEDURE AgregarTipoListaTiposElementales(t: TipoElemental; VAR l: ListaTiposElementales); Begin
-
+    PROCEDURE AgregarTipoListaTiposElementales(t: TipoElemental; VAR l: ListaTiposElementales);
+    Begin
+      l.tope := l.tope + 1;
+      l.lista[l.tope] := t;
     end;
 
     (*Indica si la lista es vacía.*)
-    FUNCTION EsVaciaListaTiposElementales(l: ListaTiposElementales): BOOLEAN; Begin
-
+    FUNCTION EsVaciaListaTiposElementales(l: ListaTiposElementales): BOOLEAN;
+    Begin
+      EsVaciaListaTiposElementales := l.tope = 0;
     end;
 
     (*Retorna el tipo del inicio de la lista. La lista no debe esar vacía.*)
-    FUNCTION PrimerTipoListaTiposElementales(l: ListaTiposElementales): TipoElemental; Begin
-
+    FUNCTION PrimerTipoListaTiposElementales(l: ListaTiposElementales): TipoElemental;
+    Begin
+      PrimerTipoListaTiposElementales := l.lista[1];
     end;
 
     (*Indica si el índice pasado como argumento es válido.*)
-    FUNCTION EsIndiceValidoListaTiposElementales(i: INTEGER; l: ListaTiposElementales): BOOLEAN; Begin
-
+    FUNCTION EsIndiceValidoListaTiposElementales(i: INTEGER; l: ListaTiposElementales): BOOLEAN;
+    Begin
+      EsIndiceValidoListaTiposElementales := l.tope >= i;
     end;
 
     (*Retorna el tipo del índice indicado. El índice debe ser válido.*)
-    FUNCTION TipoListaTiposElementales(indice: INTEGER; l: ListaTiposElementales): TipoElemental;  Begin
-
+    FUNCTION TipoListaTiposElementales(indice: INTEGER; l: ListaTiposElementales): TipoElemental;
+    Begin
+      TipoListaTiposElementales := l.lista[indice];
     end;
 end.
 
