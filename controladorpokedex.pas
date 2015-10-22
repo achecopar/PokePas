@@ -65,9 +65,9 @@ VAR
     VAR especieBuscada: String;
         indiceEspecieBuscada: INTEGER;
     BEGIN
-        IF NOT PokedexStarted THEN
-            StartPokedex;
-
+        //IF NOT PokedexStarted THEN
+        StartPokedex;
+        DrawPokedexBackground;
         DrawPokedex(pokedex);
 
         REPEAT
@@ -107,6 +107,7 @@ VAR
                     Write(' ERROR: No existe la especie buscada. ');
                     TextBackground(Black);
                 end else begin
+                    TextBackground(Black);
                     WHILE indiceEspecieBuscada<IndiceEspecieSeleccionada(pokedex) do begin
                         AnteriorEspecie(pokedex);
                     end;
