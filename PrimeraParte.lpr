@@ -3,9 +3,9 @@ program PrimeraParte;
 USES Testing;
 
 begin
-  (* TestearTipoElemental();
+  TestearTipoElemental();
   TestearEspecie();
-  TestearListaTiposElementales();  *)
+  TestearListaTiposElementales();
   TestearListaEspecies();
 end.
 

@@ -8,55 +8,77 @@
       <Unit0>
         <Filename Value="PokePas.lpr"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="20"/>
+        <IsVisibleTab Value="True"/>
+        <UsageCount Value="69"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="basededatos.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="BaseDeDatos"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="69"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="dt_tipoelemental.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="DT_TipoElemental"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="69"/>
       </Unit2>
       <Unit3>
         <Filename Value="dt_especie.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="DT_Especie"/>
-        <UsageCount Value="20"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="94"/>
+        <CursorPos X="11" Y="114"/>
+        <UsageCount Value="69"/>
+        <Loaded Value="True"/>
       </Unit3>
       <Unit4>
         <Filename Value="utilidades.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Utilidades"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="69"/>
       </Unit4>
       <Unit5>
         <Filename Value="dt_pokedex.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="DT_Pokedex"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="69"/>
       </Unit5>
       <Unit6>
         <Filename Value="gui_pokedex.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="GUI_Pokedex"/>
-        <UsageCount Value="20"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="33"/>
+        <CursorPos X="36" Y="71"/>
+        <FoldState Value=" T3c2OH"/>
+        <UsageCount Value="69"/>
+        <Loaded Value="True"/>
       </Unit6>
       <Unit7>
         <Filename Value="controladorpokedex.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="ControladorPokedex"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="69"/>
       </Unit7>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="3" HistoryIndex="2">
+      <Position1>
+        <Filename Value="gui_pokedex.pas"/>
+        <Caret Line="16" Column="26"/>
+      </Position1>
+      <Position2>
+        <Filename Value="gui_pokedex.pas"/>
+        <Caret Line="38" Column="30" TopLine="25"/>
+      </Position2>
+      <Position3>
+        <Filename Value="gui_pokedex.pas"/>
+        <Caret Line="118" Column="15" TopLine="102"/>
+      </Position3>
+    </JumpHistory>
   </ProjectSession>
 </CONFIG>

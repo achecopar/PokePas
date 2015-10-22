@@ -80,8 +80,7 @@ IMPLEMENTATION
     FUNCTION ObtenerTipoElemental(id: INTEGER; p: DatosPokedex): TipoElemental;
     VAR i: INTEGER; t: TipoElemental;
     BEGIN
-          (* 'NULL' tiene indice 19 definido en el sistema, lo devuelvo
-          Quizas podria ir el de los interrogantes, porque ya se usa el NULL en tipo secundario inexistente*)
+          (* 'NULL' tiene indice 19 definido en el sistema, lo devuelvo *)
           if(NOT EsIndiceValidoListaTiposElementales(id,p.tiposElementales)) then
              i := 19;
           ObtenerTipoElemental := TipoListaTiposElementales(id,p.tiposElementales)

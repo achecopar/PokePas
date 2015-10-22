@@ -31,7 +31,7 @@
         <FormatVersion Value="1"/>
       </local>
     </RunParams>
-    <Units Count="6">
+    <Units Count="9">
       <Unit0>
         <Filename Value="PrimeraParte.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -49,6 +49,7 @@
       <Unit3>
         <Filename Value="dt_tipoelemental.pas"/>
         <IsPartOfProject Value="True"/>
+        <UnitName Value="DT_TipoElemental"/>
       </Unit3>
       <Unit4>
         <Filename Value="testing.pas"/>
@@ -60,6 +61,20 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="Utilidades"/>
       </Unit5>
+      <Unit6>
+        <Filename Value="dt_pokedex.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DT_Pokedex"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="gui_pokedex.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="GUI_Pokedex"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="PokePas.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit8>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
