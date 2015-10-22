@@ -55,16 +55,13 @@ IMPLEMENTATION
     la última especie entonces no se hace nada.*)
     PROCEDURE SiguienteEspecie(VAR p: DatosPokedex);
     BEGIN
-         if esIndiceValidoListaEspecies(p.indiceDeSeleccion + 1, p.especies)
+         if EsIndiceValidoListaEspecies(p.indiceDeSeleccion + 1, p.especies)
             then p.indiceDeSeleccion := p.indiceDeSeleccion + 1;
     end;
 
     (*Mueve el selector a la especie anterior en la lista. Si ya está seleccionada
     la primera especie entonces no se hace nada.*)
     PROCEDURE AnteriorEspecie(VAR p: DatosPokedex); BEGIN
-          (*      Ivana
-          if(EsIndiceValidoListaEspecies(p.indiceDeSeleccion-1,p.especies) then
-                       p.indiceDeSeleccion:=p.indiceDeSeleccion-1          *)
          if p.indiceDeSeleccion > 1
            then p.indiceDeSeleccion := p.indiceDeSeleccion - 1;
     end;
@@ -77,11 +74,9 @@ IMPLEMENTATION
 
     (*Retorna el índice de la especie seleccionada en la lista.*)
     FUNCTION IndiceEspecieSeleccionada(p: DatosPokedex): INTEGER; BEGIN
-         (* Ivana
-         IndiceEspecieSeleccionada(p.indiceDeSeleccion);    *)
-
-        IndiceEspecieSeleccionada := IdEspecie(especieListaEspecies(p.indiceDeSeleccion,
-                                                                    p.especies));
+        IndiceEspecieSeleccionada := p.indiceDeSeleccion;
+        (* IndiceEspecieSeleccionada := IdEspecie(especieListaEspecies(p.indiceDeSeleccion,
+                                                                    p.especies));  *)
     end;
 
     (*Retorna un TipoElemental a partir de su número ID. Si no existe un tipo con
@@ -92,10 +87,13 @@ IMPLEMENTATION
 
           (* Comentario: 'NULL' tiene indice 19 definido en el sistema, lo devuelvo
           Quizas podria ir el de los interrogantes, porque ya se usa el NULL en tipo secundario inexistente    *)
-          (* if(NOT EsIndiceValidoListaTiposElementales(id,p.tiposElementales)) then
-             i := 19;     *)
+          if(NOT EsIndiceValidoListaTiposElementales(id,p.tiposElementales)) then
+             id := 19;
+          ObtenerTipoElemental := TipoListaTiposElementales(id,p.tiposElementales);
 
-        i := 0;
+
+                                                            (*
+       i := 0;
         if not esIndiceValidoListaTiposElementales(id, p.tiposElementales)then
            begin
             repeat
@@ -111,7 +109,7 @@ IMPLEMENTATION
                  t := TipoListaTiposElementales(i, p.tiposElementales);
             until id = idTipoElemental(t);
             ObtenerTipoElemental := t;
-          end;
+          end;                                                *)
     end;
 
     (*Busca una especie en la pokedex que tenga un número o un nombre igual al

@@ -125,16 +125,16 @@ IMPLEMENTATION
 
     (*Indica si el índice pasado como argumento es válido.*)
     FUNCTION EsIndiceValidoListaTiposElementales(i: INTEGER; l: ListaTiposElementales): BOOLEAN; Begin
-             EsIndiceValidoListaTiposElementales := i < l.tope;
+             EsIndiceValidoListaTiposElementales := (i < l.tope);
 
     end;
 
     (*Retorna el tipo del índice indicado. El índice debe ser válido.*)
     FUNCTION TipoListaTiposElementales(indice: INTEGER; l: ListaTiposElementales): TipoElemental;  Begin
-         (* Ivana
+         (* Ivana   *)
              if(indice<l.tope) then
-                          TipoListaTiposElementales := l.lista[indice];             *)
-      TipoListaTiposElementales := l.lista[indice];
+                          TipoListaTiposElementales := l.lista[indice];
+     (* TipoListaTiposElementales := l.lista[indice];   *)
     end;
 end.
 
