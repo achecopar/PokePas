@@ -40,14 +40,9 @@ IMPLEMENTATION
     (*Carga desde la base de datos las listas de especies y tipos elementales. Se
     establece además el índice de selección (selector) en 1*)
     PROCEDURE IniciarPokedex(VAR p: DatosPokedex); Begin
-               indiceDeSeleccion:=1;
-               CargarListaEspecies(especies);
-               CargarListaTiposElementales(tiposElementales);
-
-               (*     Ivana
                p.indiceDeSeleccion:=1;
                CargarListaEspecies(p.especies);
-               CargarListaTiposElementales(p.tiposElementales);   *)
+               CargarListaTiposElementales(p.tiposElementales);
     end;
 
     (*Devuelve la especie marcada por el selector.*)
@@ -57,7 +52,8 @@ IMPLEMENTATION
     end;
 
     (*Mueve el selector a la siguiente especie en la lista. Si ya está seleccionada
-    la última especie entonces no se hace nada.*)       ;
+    la última especie entonces no se hace nada.*)
+    PROCEDURE SiguienteEspecie(VAR p: DatosPokedex);
     BEGIN
          if esIndiceValidoListaEspecies(p.indiceDeSeleccion + 1, p.especies)
             then p.indiceDeSeleccion := p.indiceDeSeleccion + 1;
@@ -70,7 +66,7 @@ IMPLEMENTATION
           if(EsIndiceValidoListaEspecies(p.indiceDeSeleccion-1,p.especies) then
                        p.indiceDeSeleccion:=p.indiceDeSeleccion-1          *)
          if p.indiceDeSeleccion > 1
-           then p.indiceDeSeleccion := p.indiceDeSeleccion - 1;   *)
+           then p.indiceDeSeleccion := p.indiceDeSeleccion - 1;
     end;
 
     (*Retorna la lista de especies.*)
