@@ -1,0 +1,25 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.o
+*.so
+ 
+# Logs #
+######################
+*.log
+ 
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Trashes
+*.db
+
+# Otros #
+*.exe
+*.ppu
+*.bak
+*.lps
