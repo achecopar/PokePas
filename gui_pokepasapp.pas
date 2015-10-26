@@ -155,9 +155,15 @@ implementation
 
       //Dibujamos la lista de selección.
       if PokePas.ListaEspecies.Count = 0 then
-         for i := 1 to MAX_NUMERO_ESPECIES do
+      begin
+         //for i := 1 to MAX_NUMERO_ESPECIES do
+         i := 1;
+         while EsIndiceValidoListaEspecies(i, p.especies) do
+            begin
             PokePas.ListaEspecies.Items.Add(NombreEspecie(EspecieListaEspecies(i,ListaDeEspecies(p))));
-
+            i := i + 1;
+            end;
+      end;
       PokePas.ListaEspecies.ClearSelection;
       PokePas.ListaEspecies.ItemIndex := IndiceEspecieSeleccionada(pokedex)-1;
   end;
@@ -219,7 +225,7 @@ begin
                   end;
             VK_UP:
                   Begin
-                      DrawPokedex(pokedex);
+                     DrawPokedex(pokedex);
                   end;
         end;
 end;
