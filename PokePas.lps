@@ -4,112 +4,117 @@
     <PathDelim Value="\"/>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="8">
+    <Units Count="13">
       <Unit0>
         <Filename Value="PokePas.lpr"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="70"/>
-        <Loaded Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="5"/>
+        <UsageCount Value="108"/>
       </Unit0>
       <Unit1>
         <Filename Value="basededatos.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="BaseDeDatos"/>
-        <EditorIndex Value="3"/>
-        <UsageCount Value="70"/>
-        <Loaded Value="True"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="108"/>
       </Unit1>
       <Unit2>
         <Filename Value="dt_tipoelemental.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="DT_TipoElemental"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="108"/>
       </Unit2>
       <Unit3>
         <Filename Value="dt_especie.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="DT_Especie"/>
-        <EditorIndex Value="4"/>
-        <TopLine Value="94"/>
-        <CursorPos X="11" Y="114"/>
-        <UsageCount Value="70"/>
-        <Loaded Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="51"/>
+        <CursorPos X="51" Y="51"/>
+        <UsageCount Value="108"/>
       </Unit3>
       <Unit4>
         <Filename Value="utilidades.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Utilidades"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="82"/>
-        <CursorPos X="60" Y="137"/>
-        <FoldState Value=" T1jJ?24@"/>
-        <UsageCount Value="70"/>
-        <Loaded Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="102"/>
+        <CursorPos X="65" Y="128"/>
+        <UsageCount Value="108"/>
       </Unit4>
       <Unit5>
         <Filename Value="dt_pokedex.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="DT_Pokedex"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="50"/>
-        <CursorPos X="67" Y="69"/>
-        <UsageCount Value="70"/>
-        <Loaded Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="60"/>
+        <CursorPos X="36" Y="64"/>
+        <UsageCount Value="108"/>
       </Unit5>
       <Unit6>
         <Filename Value="gui_pokedex.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="GUI_Pokedex"/>
-        <EditorIndex Value="5"/>
-        <TopLine Value="33"/>
-        <CursorPos X="36" Y="71"/>
-        <UsageCount Value="70"/>
-        <Loaded Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="150"/>
+        <CursorPos X="7" Y="160"/>
+        <UsageCount Value="108"/>
       </Unit6>
       <Unit7>
         <Filename Value="controladorpokedex.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="ControladorPokedex"/>
-        <UsageCount Value="70"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="108"/>
       </Unit7>
+      <Unit8>
+        <Filename Value="gui2_pokedex.pas"/>
+        <ComponentName Value="Pokedex"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="GUI2_Pokedex"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="22" Y="16"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="54"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="gui2_pokedex.lfm"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="40" Y="27"/>
+        <UsageCount Value="27"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\..\AppData\Local\Temp\Rar$DIa0.980\FPAppT3.lpr"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="17" Y="16"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="C:\lazarus\lcl\include\customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2181"/>
+        <CursorPos Y="2196"/>
+        <UsageCount Value="10"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="C:\lazarus\lcl\interfaces\win32\win32wscontrols.pp"/>
+        <UnitName Value="Win32WSControls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="239"/>
+        <CursorPos Y="253"/>
+        <UsageCount Value="10"/>
+      </Unit12>
     </Units>
-    <JumpHistory Count="9" HistoryIndex="8">
-      <Position1>
-        <Filename Value="gui_pokedex.pas"/>
-        <Caret Line="16" Column="26"/>
-      </Position1>
-      <Position2>
-        <Filename Value="gui_pokedex.pas"/>
-        <Caret Line="38" Column="30" TopLine="25"/>
-      </Position2>
-      <Position3>
-        <Filename Value="gui_pokedex.pas"/>
-        <Caret Line="118" Column="15" TopLine="102"/>
-      </Position3>
-      <Position4>
-        <Filename Value="utilidades.pas"/>
-      </Position4>
-      <Position5>
-        <Filename Value="utilidades.pas"/>
-        <Caret Line="74" Column="14" TopLine="58"/>
-      </Position5>
-      <Position6>
-        <Filename Value="dt_pokedex.pas"/>
-        <Caret Line="118" Column="51" TopLine="104"/>
-      </Position6>
-      <Position7>
-        <Filename Value="dt_pokedex.pas"/>
-        <Caret Line="45" Column="69" TopLine="25"/>
-      </Position7>
-      <Position8>
-        <Filename Value="dt_pokedex.pas"/>
-        <Caret Line="55" Column="58" TopLine="36"/>
-      </Position8>
-      <Position9>
-        <Filename Value="dt_pokedex.pas"/>
-        <Caret Line="56" Column="31" TopLine="38"/>
-      </Position9>
-    </JumpHistory>
+    <General>
+      <ActiveWindowIndexAtStart Value="-1"/>
+    </General>
+    <JumpHistory HistoryIndex="-1"/>
   </ProjectSession>
 </CONFIG>

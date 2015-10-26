@@ -1,0 +1,365 @@
+object Pokedex: TPokedex
+  Left = 178
+  Height = 427
+  Top = 206
+  Width = 659
+  Caption = 'Pokedex'
+  ClientHeight = 407
+  ClientWidth = 659
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  LCLVersion = '1.4.4.0'
+  object PanelPokedex: TPanel
+    Left = 0
+    Height = 407
+    Top = 0
+    Width = 659
+    Caption = 'PanelPokedex'
+    ClientHeight = 407
+    ClientWidth = 659
+    TabOrder = 0
+    Visible = False
+    object Image1: TImage
+      Left = 8
+      Height = 248
+      Top = 8
+      Width = 314
+    end
+    object Estadisticas: TGroupBox
+      Left = 327
+      Height = 105
+      Top = 64
+      Width = 321
+      Caption = 'Estadísticas base'
+      ClientHeight = 85
+      ClientWidth = 317
+      TabOrder = 0
+      object PS: TLabel
+        Left = 8
+        Height = 15
+        Top = 8
+        Width = 16
+        Caption = 'PS:'
+        ParentColor = False
+      end
+      object ATK: TLabel
+        Left = 104
+        Height = 15
+        Top = 8
+        Width = 25
+        Caption = 'ATK:'
+        ParentColor = False
+      end
+      object txtPS: TEdit
+        Left = 32
+        Height = 23
+        Top = 0
+        Width = 40
+        TabOrder = 0
+        Text = 'txtPS'
+      end
+      object txtEXP: TEdit
+        Left = 160
+        Height = 23
+        Top = 62
+        Width = 40
+        TabOrder = 1
+        Text = 'txtEXP'
+      end
+      object EXP: TLabel
+        Left = 336
+        Height = 15
+        Top = 152
+        Width = 23
+        Caption = 'EXP:'
+        ParentColor = False
+      end
+      object ATKSp: TLabel
+        Left = 432
+        Height = 15
+        Top = 120
+        Width = 38
+        Caption = 'ATKSp:'
+        ParentColor = False
+      end
+      object AMISTAD: TLabel
+        Left = 432
+        Height = 15
+        Top = 152
+        Width = 54
+        Caption = 'AMISTAD:'
+        ParentColor = False
+      end
+      object DEF: TLabel
+        Left = 545
+        Height = 15
+        Top = 88
+        Width = 23
+        Caption = 'DEF:'
+        ParentColor = False
+      end
+      object DEFSp: TLabel
+        Left = 545
+        Height = 15
+        Top = 120
+        Width = 36
+        Caption = 'DEFSp:'
+        ParentColor = False
+      end
+      object RATIO: TLabel
+        Left = 544
+        Height = 15
+        Top = 152
+        Width = 37
+        Caption = 'RATIO:'
+        ParentColor = False
+      end
+      object VEL: TLabel
+        Left = 336
+        Height = 15
+        Top = 120
+        Width = 22
+        Caption = 'VEL:'
+        ParentColor = False
+      end
+      object txtVEL: TEdit
+        Left = 360
+        Height = 23
+        Top = 112
+        Width = 40
+        TabOrder = 2
+        Text = 'txtVEL'
+      end
+      object txtAMISTAD: TEdit
+        Left = 360
+        Height = 23
+        Top = 144
+        Width = 40
+        TabOrder = 3
+        Text = 'txtAMISTAD'
+      end
+      object txtATK: TEdit
+        Left = 488
+        Height = 23
+        Top = 80
+        Width = 40
+        TabOrder = 4
+        Text = 'txtATK'
+      end
+      object txtATKSp: TEdit
+        Left = 488
+        Height = 23
+        Top = 112
+        Width = 40
+        TabOrder = 5
+        Text = 'txtATKSp'
+      end
+      object txtDEF: TEdit
+        Left = 584
+        Height = 23
+        Top = 80
+        Width = 40
+        TabOrder = 6
+        Text = 'txtDEF'
+      end
+      object txtDEFSp: TEdit
+        Left = 584
+        Height = 23
+        Top = 112
+        Width = 40
+        TabOrder = 7
+        Text = 'txtDEFSp'
+      end
+      object txtRATIO: TEdit
+        Left = 584
+        Height = 23
+        Top = 144
+        Width = 40
+        TabOrder = 8
+        Text = 'txtRATIO'
+      end
+    end
+    object ListaEspecies: TListBox
+      Left = 327
+      Height = 136
+      Top = 264
+      Width = 328
+      ItemHeight = 0
+      TabOrder = 1
+    end
+    object Pokemon: TGroupBox
+      Left = 327
+      Height = 49
+      Top = 8
+      Width = 320
+      Caption = 'Pokémon'
+      ClientHeight = 29
+      ClientWidth = 316
+      TabOrder = 2
+      object Id: TEdit
+        Left = 352
+        Height = 23
+        Top = 32
+        Width = 40
+        TabOrder = 0
+        Text = 'Id'
+      end
+      object Nombre: TEdit
+        Left = 432
+        Height = 23
+        Top = 32
+        Width = 80
+        TabOrder = 1
+        Text = 'Nombre'
+      end
+      object Tipo: TEdit
+        Left = 545
+        Height = 23
+        Top = 32
+        Width = 96
+        TabOrder = 2
+        Text = 'Tipo'
+      end
+    end
+    object Esfuerzo: TGroupBox
+      Left = 328
+      Height = 73
+      Top = 160
+      Width = 321
+      Caption = 'Puntos de Esfuerzo'
+      ClientHeight = 53
+      ClientWidth = 317
+      TabOrder = 3
+      object PSE: TLabel
+        Left = 8
+        Height = 15
+        Top = 8
+        Width = 16
+        Caption = 'PS:'
+        ParentColor = False
+      end
+      object ATKE: TLabel
+        Left = 103
+        Height = 15
+        Top = 8
+        Width = 25
+        Caption = 'ATK:'
+        ParentColor = False
+      end
+      object DEFE: TLabel
+        Left = 216
+        Height = 15
+        Top = 8
+        Width = 23
+        Caption = 'DEF:'
+        ParentColor = False
+      end
+      object VELE: TLabel
+        Left = 336
+        Height = 15
+        Top = 216
+        Width = 22
+        Caption = 'VEL:'
+        ParentColor = False
+      end
+      object ATKSpE: TLabel
+        Left = 432
+        Height = 15
+        Top = 216
+        Width = 38
+        Caption = 'ATKSp:'
+        ParentColor = False
+      end
+      object DEFSpE: TLabel
+        Left = 545
+        Height = 15
+        Top = 216
+        Width = 36
+        Caption = 'DEFSp:'
+        ParentColor = False
+      end
+      object txtPSE: TEdit
+        Left = 360
+        Height = 23
+        Top = 184
+        Width = 40
+        TabOrder = 0
+        Text = 'txtPSE'
+      end
+      object txtVELE: TEdit
+        Left = 360
+        Height = 23
+        Top = 209
+        Width = 40
+        TabOrder = 1
+        Text = 'txtVELE'
+      end
+      object txtATKE: TEdit
+        Left = 488
+        Height = 23
+        Top = 184
+        Width = 40
+        TabOrder = 2
+        Text = 'txtATKE'
+      end
+      object txtATKSpE: TEdit
+        Left = 488
+        Height = 23
+        Top = 209
+        Width = 40
+        TabOrder = 3
+        Text = 'txtATKSpE'
+      end
+      object txtDEFE: TEdit
+        Left = 584
+        Height = 23
+        Top = 184
+        Width = 40
+        TabOrder = 4
+        Text = 'txtDEFE'
+      end
+      object txtDEFSpE: TEdit
+        Left = 584
+        Height = 23
+        Top = 209
+        Width = 40
+        TabOrder = 5
+        Text = 'txtDEFSpE'
+      end
+    end
+    object Busqueda: TEdit
+      Left = 8
+      Height = 23
+      Top = 376
+      Width = 312
+      TabOrder = 4
+      Text = 'Busqueda'
+    end
+    object Crecimiento: TLabel
+      Left = 336
+      Height = 15
+      Top = 248
+      Width = 80
+      Caption = 'CRECIMIENTO:'
+      ParentColor = False
+    end
+    object InfoBusqueda: TMemo
+      Left = 8
+      Height = 106
+      Top = 264
+      Width = 312
+      Lines.Strings = (
+        'Memo1'
+      )
+      TabOrder = 5
+    end
+    object txtCrecimiento: TEdit
+      Left = 424
+      Height = 23
+      Top = 240
+      Width = 104
+      TabOrder = 6
+      Text = 'txtCrecimiento'
+    end
+  end
+end

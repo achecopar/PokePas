@@ -82,7 +82,7 @@ IMPLEMENTATION
     (*Retorna un TipoElemental a partir de su número ID. Si no existe un tipo con
     el ID indicado se retorna el tipo NULL.*)
     FUNCTION ObtenerTipoElemental(id: INTEGER; p: DatosPokedex): TipoElemental;
-    VAR i: INTEGER; t: TipoElemental;
+    //VAR i: INTEGER; t: TipoElemental;
     BEGIN
 
           (* Comentario: 'NULL' tiene indice 19 definido en el sistema, lo devuelvo

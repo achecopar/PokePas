@@ -31,7 +31,12 @@
         <FormatVersion Value="1"/>
       </local>
     </RunParams>
-    <Units Count="8">
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="9">
       <Unit0>
         <Filename Value="PokePas.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -71,6 +76,14 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="ControladorPokedex"/>
       </Unit7>
+      <Unit8>
+        <Filename Value="gui2_pokedex.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Pokedex"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="GUI2_Pokedex"/>
+      </Unit8>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
