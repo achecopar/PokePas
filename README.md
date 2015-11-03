@@ -1,2 +1,2 @@
 # PokePas
-Proyecto Prog 1 - FING 2015
+Student intiative in Facultad de Ingeniería, Montevideo, Uruguay.
